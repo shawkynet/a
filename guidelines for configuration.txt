@@ -1,0 +1,54 @@
+Flutter version: 3.10.4
+
+1- to add google maps api key
+replace your_google_maps_ApiKey in
+cargo-customer\assets config.json 
+cargo-customer\android\app\src\main AndroidManifest.xml
+cargo-customer\ios\Runner AppDelegate.swift
+
+2- to change app icon 
+go to cargo-customer\assets\images 
+replace your png app icon with name app_icon.png 
+after pub get
+after that you need to run this command in terminal
+flutter pub run flutter_launcher_icons:main
+
+3- to change app logo in the application 
+go to cargo-customer\assets\images 
+replace your png app logo with name logo.png
+
+4- to add your base url
+replace your_base_url in
+cargo-customer\assets config.json
+
+5- for firebase configuration
+ add "google-services.json" in "android/app/"
+ add "GoogleService-Info.plist" in "ios/Runner/GoogleService-Info.plist"
+
+ 6- to change app name
+[For Android]
+go to \android\app\src\main AndroidManifest.xml then:
+Edit the android:label in the application tag to reflect the final name of the app.
+[For IOS]
+Navigate to your target’s settings in Xcode:
+In Xcode, open Runner.xcworkspace in your app’s ios folder.
+To view your app’s settings, select the Runner project in the Xcode project navigator.
+Then, in the main view sidebar, select the Runner target.
+Select the General tab. Next, you’ll verify the most important settings:
+Display Name: the name of the app to be displayed on the home screen and elsewhere.
+
+7- to change app color
+go to assets/config.json
+then change "primary" value
+"note: if color not changed you need to uninstall the app and install it again"
+
+8- to change package name
+run this command after pub get 
+flutter pub run change_app_package_name:main com.package.name
+
+9- replace svg icon in
+\assets\icons\logo.svg with with name "logo"
+
+10-to upload app to store
+for android:	https://flutter.dev/docs/deployment/android
+for ios:	https://flutter.dev/docs/deployment/ios

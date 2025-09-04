@@ -1,0 +1,23 @@
+{
+  "app_name": "الواو لشحن السريع",
+  "baseUrl": "https://alwaw.com.ly",
+  "google_maps_ApiKey": "",
+  "styling": {
+    "brand": "alwaw",
+    "primary": "#0E7490",
+    "primaryDark": "#0B6077",
+    "accent": "#F59E0B",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "danger": "#EF4444",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "text": "#0F172A",
+    "muted": "#64748B"
+  },
+  "map": {
+    "defaultZoom": 13,
+    "defaultLat": 32.8872,
+    "defaultLng": 13.1913
+  }
+}
